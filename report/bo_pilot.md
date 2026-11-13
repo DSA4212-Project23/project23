@@ -1,5 +1,9 @@
 # Bayesian optimisation pilot
 
+Historical implementation pilot, preceding the completed studies in
+[comparison.md](comparison.md). Its 50-call results are excluded from the
+report’s main comparisons.
+
 Eight runs; dimension 5, beta 0, instance 0, run 0, 50 calls including 11 initial points. Executed 6 November 2026.
 
 | Kernel | Conditioning | Orientation | Final regret | Seconds | Failed SLSQP refinements | Fits with warnings |
@@ -15,7 +19,8 @@ Eight runs; dimension 5, beta 0, instance 0, run 0, 50 calls including 11 initia
 
 Every run completed 50 calls. No zero-EI random fallbacks were used. GP warnings include length scales reaching the upper bound; warning text is stored in each JSON. Failed refinements are counted even if their final point is feasible and useful. The original random pool always remains eligible.
 
-The ARD result on the aligned ill-conditioned problem was better than its rotated counterpart in this pilot. One instance and one seed cannot establish a systematic rotation penalty or superiority over another method. CMA-ES has not been run.
+The ARD result on the aligned ill-conditioned problem was better than its rotated counterpart in this pilot. One instance and one seed cannot establish a systematic rotation penalty or superiority over another method. CMA-ES was evaluated subsequently; see [cmaes_pilot.md](cmaes_pilot.md) and
+the repeated studies in [comparison.md](comparison.md).
 
 The isotropic surrogate is rotationally invariant, but acquisition sampling and numerical local searches are not coupled by rotation; individual paired search traces can differ. Surrogate invariance was checked separately using rotated training/query points.
 
@@ -23,6 +28,6 @@ Timing starts immediately before evaluating the initial design and includes obje
 
 Versions: python 3.14.7, numpy 2.5.4, scipy 1.18.1, scikit-learn 1.9.1, matplotlib 3.11.2.
 
-Reproduce each row with `.venv/bin/python code/prepare_benchmark.py --bo --budget 50 --conditioning K --orientation O --kernel M`. Keep the default dimension, beta, instance and run.
+To reproduce a row, use `.venv/bin/python code/prepare_benchmark.py --bo --budget 50 --conditioning K --orientation O --kernel M --output OUTPUT`, replacing `K`, `O`, `M` with its settings and `OUTPUT` with a fresh directory. Dimension, beta, instance and run use their defaults.
 
 Full observations, timings, checkpoints, seeds and warnings are in [results/bo](../results/bo/).

@@ -1,12 +1,16 @@
 # Controlled valley geometry: rotation × conditioning
 
+This document records the benchmark specification and study protocols. Completed
+experiments and conclusions are in [comparison.md](comparison.md); the original
+2,100-run matrix is an unexecuted optional extension.
+
 ## Research question
 
 Does coupling coordinates change search difficulty, and does this effect increase
 with conditioning? The hypothesis is that representations favouring individual
 coordinate directions incur a larger rotation penalty as conditioning grows.
-This is a testable hypothesis, not an established comparison result. No optimisers
-have yet been run. Conclusions will depend on the specific implementations tested.
+The completed experiments test this hypothesis for the specific implementations
+and conditions described in [comparison.md](comparison.md).
 
 The construction follows the emphasis on interpretable difficulty factors in
 [COCO's benchmark design](https://coco-platform.org/testsuites/bbob/overview.html).
@@ -47,7 +51,7 @@ and rotational symmetry. Thus E[f(X)] = 1 for a uniformly sampled feasible X.
 Normalisation preserves the optimum and Hessian condition number. It controls
 mean random-point scale, not the entire loss distribution or absolute curvature.
 
-## Controls and experiment matrix
+## Controls and optional extended experiment matrix
 
 | Study | d | β | κ | Orientations |
 |---|---|---|---|---|
@@ -68,10 +72,9 @@ search. Initial means derived from these points must rotate too; an origin mean
 and isotropic initial scale are also consistent. Matching integer random seeds
 alone does not guarantee identical rotated solver trajectories.
 
-Do not replace the ball with a fixed cube, clip coordinates, or add penalties.
-That would change the experiment. Future solvers need the same known ball
-constraint. Reject/resample infeasible proposals or constrain candidate selection
-directly; log proposal failures and their runtime. The boundary can still affect
+Both implemented solvers use the same known ball constraint, without coordinate
+clipping or penalties. CMA-ES resamples infeasible proposals; BO constrains
+candidate selection directly. Proposal failures and runtime are recorded. The boundary can still affect
 performance, but it introduces no preferred orientation geometrically.
 
 ## Interface and reproducibility
@@ -90,7 +93,7 @@ Exhaustion raises an error before an additional evaluation.
 
 The problem dictionary, exact optimum `problem["rotation"] @ problem["shift"]`,
 `loss(problem, x)` and `hessian(problem, x)` are evaluator-only data and analysis functions. Analysis
-loss bypasses the budget. A future solver receives an evaluation callback that
+loss bypasses the budget. Each implemented solver receives an evaluation callback that
 calls `evaluate`, plus dimension, feasibility and its initial observations;
 it must not receive the problem dictionary or call analysis functions directly.
 This separation is an experimental convention, not a security boundary.
@@ -105,10 +108,10 @@ Different dimensions are separate experiments, not embedded copies.
 `initial_design(problem, run)` supplies 2d+1 points sampled uniformly by volume,
 with radius U^(1/d) and a uniform sphere direction. Search randomness must be
 independent, e.g. SeedSequence([20261102, d, instance, run, 3]). Both methods
-receive the same evaluated initial information within each instance/run. How
-each solver incorporates it must be documented in the subsequent method stage.
+receive the same evaluated initial information within each instance/run. BO fits
+its GP to all initial observations; CMA-ES starts at the best initial point.
 
-## Later evaluation contract
+## Optional extended-study protocol
 
 - Five independent search runs per instance: 700 runs per method across the suite.
 - 500 objective calls, including initial information; checkpoints 50/100/250/500.
@@ -137,11 +140,11 @@ unit expected loss, paired starts, reproducibility and budget enforcement.
 The preparation script generates a numeric validation report across 180 settings.
 Its analysis evaluations do not constitute optimisation trials.
 
-The nonquadratic extension checks transfer within a related family, not broad
-real-world generalisation. There is no noise, multimodality, unknown constraint,
-or low-dimensional hidden subspace. A failure to distinguish methods is a valid
-result; do not select new instances after seeing outcomes to manufacture a winner.
-CMA-ES settings are now fixed below; equal tuning allowances must remain fixed before the full comparison.
+The optional nonquadratic extension would test transfer within a related family,
+not broad real-world generalisation. The completed studies contain no noise,
+multimodality, unknown constraint, or low-dimensional hidden subspace.
+The fixed CMA-ES settings are described below; the report discusses the unequal
+tuning effort introduced by the later BO acquisition ablation.
 BO is implemented; eight pilot runs are documented in [bo_pilot.md](bo_pilot.md).
 
 ## Implemented BO settings
@@ -212,10 +215,11 @@ Four pilots are documented in [cmaes_pilot.md](cmaes_pilot.md).
 
 ## Staged comparison protocol
 
-Before the full 2,100-run comparison, run 72 experiments: d=5, beta=0,
+The completed original comparison comprised 72 experiments: d=5, beta=0,
 kappa=1/10000, both orientations, three instances (0–2), two runs (0–1),
 and three methods (ARD BO, isotropic BO, CMA-ES). The 500-call cap and all
-previously specified solver settings remain fixed. No tuning uses these results.
+previously specified solver settings were fixed within this study. Its results
+motivated the subsequent acquisition diagnostic and revised BO study.
 One BLAS thread and serial execution separate algorithm overhead from concurrency.
 Job order is shuffled using seed 20261104. Resume checks code and dependency
 fingerprints; existing pilot results are not silently incorporated.
@@ -234,23 +238,23 @@ Known-objective validation is evaluator-only and cannot influence search.
 Convergence curves use the mean of instance-average log regret at each call,
 with the 1e-12 numerical floor. Runtime distributions report median and IQR
 alongside all individual runs. Diagnostic figures and data processing are outside
-search timing. The full study and dimension/nonquadratic transfer checks remain
-pending after this stage.
+search timing. The optional extended study and dimension/nonquadratic optimisation experiments
+were not executed.
 
 ## Held-out revised-method validation
 
-After the acquisition diagnostic, freeze logei_local for ARD and isotropic BO.
-Validate against the unchanged CMA-ES implementation using instances 3–5, runs
+After the acquisition diagnostic, logei_local was frozen for ARD and isotropic BO.
+The completed validation compared it with unchanged CMA-ES using instances 3–5, runs
 0–1, d=5, beta=0, kappa=1/10000 and both orientations. This is a separate 72-run
 study with a 100-call cap including 11 initial evaluations, fixed before outcomes
-are observed. Use the existing paired contrasts and whole-instance bootstrap;
-only three independent instances remain, so inference is exploratory. Do not pool
-these runs with the earlier baseline implementation or interpret between-cohort
-changes as a paired correction effect.
+were observed. Analysis uses paired contrasts and whole-instance bootstrap;
+only three independent instances are available, so inference is exploratory.
+These runs are analysed separately from the earlier baseline implementation;
+between-cohort changes do not isolate the acquisition revision.
 
 The predefined timing pilot consists of the three methods at instance 3, run 0,
-kappa=10000, rotated, with 500-call caps. Check identical prefixes against the
-100-call runs. Report its measured time growth and scores separately; one setting
+kappa=10000, rotated, with 500-call caps. All three runs reproduced the matching
+100-call input/output prefixes. Time growth and scores are reported separately; one setting
 cannot establish runtime scaling across the full suite. All jobs run serially with
 thread limits set before imports. Failures remain visible and do not trigger tuning.
-The full 2,100-run sweep remains pending after these studies.
+The optional 2,100-run sweep was not executed.

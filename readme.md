@@ -5,7 +5,7 @@ five-dimensional noiseless quadratic problems. The completed studies comprise
 72 original 500-call runs, 32 acquisition ablations, 72 held-out 100-call runs
 and three separate 500-call timing pilots. Larger studies are optional extensions.
 
-- [Report PDF](report/main.pdf), [LaTeX source](report/main.tex), [Overleaf ZIP](report/overleaf.zip).
+- [Report PDF](report/main.pdf), [LaTeX source](report/main.tex).
 - [Authors](authors.md)
 - [Detailed study record](report/comparison.md) and [problem specification](report/problem_design.md).
 
@@ -34,8 +34,8 @@ outputs rather than modifying the archived experiment datasets.
 
 Version pins do not guarantee identical floating-point trajectories on another
 OS/BLAS. Exact diagnostic replay is strict and may fail in a different numerical
-environment; use the recorded environment for exact reproduction. Report any
-mismatch instead of editing fingerprints, weakening checks or replacing archives.
+environment; use the recorded environment for exact reproduction. The archived
+fingerprints and checksums identify the original experiments.
 Wall-clock timings are machine-specific and cannot be reproduced exactly.
 
 ## 2. Synthetic data preparation
@@ -97,7 +97,7 @@ for name, expected in checks.items():
 summary = json.loads(Path('results/bo_diagnostics/summary.json').read_text())
 assert summary['completed'] == summary['expected'] == 32
 assert summary['frozen_states'] == 21
-print('Verified 136 protected artifacts; diagnostic summary: 32 runs, 21 states.')
+print(f'Verified {len(checks)} protected artifacts; diagnostic summary: 32 runs, 21 states.')
 PY
 ```
 
@@ -179,13 +179,14 @@ analysis. Invalid CMA proposals cost time but no objective evaluations. Normal
 early-stop recommendations are carried forward only to that study's budget;
 failures are reported separately. No results are pooled across study cohorts.
 
-## 6. Build and submit the report
+## 6. Report source and build
 
-Complete `authors.md` and the matching group list in `report/main.tex` first.
-Remove unused member rows/items (maximum four). Upload `report/overleaf.zip` as
-a new Overleaf project, select `main.tex` and use **XeLaTeX**. The bibliography
-is inline; there is no BibTeX step. Preserve the relative `figures/` folder.
-Alternatively, with Tectonic installed:
+The report is [main.pdf](report/main.pdf). Its complete LaTeX source is
+[main.tex](report/main.tex), including the inline bibliography; the two required
+figure PDFs are in `report/figures/`. Group members and student numbers appear
+at the start of the report and in [authors.md](authors.md).
+
+To compile locally with Tectonic installed, run from the repository root:
 
 ```sh
 cd report
@@ -193,44 +194,12 @@ tectonic main.tex
 cd ..
 ```
 
-Rebuild the ZIP after source or author edits:
+Alternatively, upload `report/main.tex` and `report/figures/` to an Overleaf
+project, preserve the relative folder structure, and select **XeLaTeX**.
+The bibliography requires no separate BibTeX step. The existing report has
+10 pages including references and appendix; rebuilding after edits may change
+pagination.
 
-```sh
-.venv/bin/python - <<'PY'
-from pathlib import Path
-from zipfile import ZipFile, ZIP_DEFLATED
-report = Path('report')
-with ZipFile(report / 'overleaf.zip', 'w', ZIP_DEFLATED) as archive:
-    archive.write(report / 'main.tex', 'main.tex')
-    for name in ('heldout_convergence.pdf', 'heldout_interaction.pdf'):
-        archive.write(report / 'figures' / name, 'figures/' + name)
-PY
-```
-
-Check the compiled PDF is **at most 10 pages including references and appendix**
-after every edit. No code belongs in the report's main text. The repository URL
-at the start must match the published repository. Publish the final source,
-figures, PDF, authors and numerical results before submitting; do not include
-`.venv/` or temporary reproduction directories. This repository was verified as
-**private**; the owner must confirm that GitHub user `alexxthiery` has marker
-access. No invitation or publishing action is implied by these local files.
-
-## 7. Reading and understanding checklist
-
-Relevant sources already cited in the report include Frazier's BO tutorial,
-Hansen's CMA-ES tutorial, the BBOB function definitions, pycma documentation and
-Ament et al.'s log-EI paper. The last extends beyond the starter references.
-The bibliography contains the links. Merely citing these sources does not
-establish that a group member has read or understood them.
-
-Before submission, each member should read the relevant sections, inspect or
-rerun experiments, and explain in their own words:
-
-- Why use a ball, rotate the initial design, and normalise expected random-point loss?
-- Why does an ARD metric favour aligned anisotropy, and what does the isotropic control test?
-- What separates EI underflow from poor candidate coverage in the frozen-model experiment?
-- Why do three instances limit the bootstrap evidence, and why is the timing pilot separate?
-- Which comparisons have matched budgets, what tuning imbalance remains, and what could falsify the proposed explanation?
-
-Record actual contributions and observations truthfully if required by the course.
-This checklist makes no claim that any member has completed these activities.
+The public repository is
+[DSA4212-Project23/project23](https://github.com/DSA4212-Project23/project23),
+matching the URL at the start of the report.

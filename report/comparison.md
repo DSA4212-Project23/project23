@@ -1,6 +1,6 @@
 # Staged matched comparison
 
-72 runs completed: three methods, four geometry settings, three problem instances and two search seeds. Each run had a cap of 500 evaluations including identical initial designs. Settings were fixed before the study. The full 2,100-run study remains pending.
+72 runs completed: three methods, four geometry settings, three problem instances and two search seeds. Each run had a cap of 500 evaluations including identical initial designs. Settings were fixed before the study. The optional 2,100-run extension was not executed.
 
 ## Final regret
 
@@ -92,7 +92,7 @@ Serial execution used one BLAS thread. Timing includes initial evaluations, fitt
 | ard | 5109 / 11736 | 11642 |
 | isotropic | 4896 / 11736 | 11155 |
 
-The fallback counts describe this implementation; they do not establish that all BO methods behave similarly. Raw GP warnings and SLSQP diagnostics remain in each run file. All objectives here are noiseless and single-basin. Dimension and nonquadratic transfer tests remain pending.
+The fallback counts describe this implementation; they do not establish that all BO methods behave similarly. Raw GP warnings and SLSQP diagnostics remain in each run file. All objectives here are noiseless and single-basin. Dimension and nonquadratic optimisation studies were not executed.
 
 Figures: [convergence](../results/comparison/staged/convergence_d5_beta0.png), [method effects](../results/comparison/staged/method_effects.png), [rotation effects](../results/comparison/staged/rotation_effects.png), [interaction](../results/comparison/staged/interaction_effects.png), [runtime](../results/comparison/staged/runtime.png). PDF versions accompany each PNG.
 
@@ -143,7 +143,7 @@ Both numerical underflow and candidate coverage contribute. A finite log-EI valu
 
 Effects on live optimisation are not uniformly favourable. Log-EI alone worsened the rotated ARD sphere case, and local candidates alone worsened the rotated ill-conditioned ARD case. These counterexamples are retained. One instance and one seed per setting support a mechanism investigation, not confidence intervals or a universal winner. Baseline/model settings were not retuned after observing outcomes.
 
-The earlier BO-versus-CMA results remain a record of the original implementation. These acquisition effects mean that its plateaus should not be generalised to BO as a method. A revised, frozen implementation needed a new matched comparison before replacing those conclusions; the held-out study below supplies that comparison at 100 calls. No variant is promoted automatically.
+The earlier BO-versus-CMA results remain a record of the original implementation. These acquisition effects mean that its plateaus should not be generalised to BO as a method. A revised, frozen implementation needed a new matched comparison before replacing those conclusions; the held-out study below supplies that comparison at 100 calls. The combined variant was subsequently selected for the held-out study below.
 
 Log-EI follows [Ament et al. (2023)](https://arxiv.org/abs/2310.20708). Tests compare the stable expression with an independent numerical integral, including extreme tails, zero uncertainty and branch boundaries.
 
@@ -216,12 +216,12 @@ All three fresh runs completed 500 calls on d=5, β=0, κ=10000, rotated, instan
 | Revised isotropic BO | 0.0008949 | 5.204e-07 | 24.21 | 280.87 |
 | CMA-ES | 0.003778 | 6.301e-05 | 0.004934 | 0.01944 |
 
-The time columns are cumulative measurements within each 500-call run, rather than timings taken from the separate 100-call executions. Five times the objective budget required about 11.6 times the elapsed time for each BO kernel and 3.94 times for CMA-ES in this case. ARD spent 56.88 seconds fitting GPs and 262.54 seconds on acquisition search; isotropic BO spent 22.83 and 258.02 seconds respectively. Objective evaluations cost less than 0.01 seconds per run. These measurements illustrate overhead growth, but cannot reliably project costs across dimensions, conditioning levels or all 2,100 planned runs.
+The time columns are cumulative measurements within each 500-call run, rather than timings taken from the separate 100-call executions. Five times the objective budget required about 11.6 times the elapsed time for each BO kernel and 3.94 times for CMA-ES in this case. ARD spent 56.88 seconds fitting GPs and 262.54 seconds on acquisition search; isotropic BO spent 22.83 and 258.02 seconds respectively. Objective evaluations cost less than 0.01 seconds per run. These measurements illustrate overhead growth, but cannot reliably project costs across dimensions, conditioning levels or the optional 2,100-run extension.
 
 Both revised BO variants retain lower regret than CMA-ES at 500 calls in this case. This is not a replicated 500-call ranking, and must not be pooled with the original comparison or the held-out 100-call dataset. The curves still plateau late despite no random fallbacks, so eliminating fallbacks does not guarantee continued progress.
 
 Each BO pilot made 489 acquisition proposals and 4,890 SLSQP refinements. ARD recorded 57 failed refinement exits and warnings in all 489 GP fits; isotropic BO recorded 94 failed exits and warnings in 450 fits. Neither used a random fallback. CMA-ES rejected 12 outside-ball proposals. All three reached the budget without solver failure.
 
-The full 2,100-run matrix, including dimension and nonquadratic checks, remains pending. The current evidence supports an implementation-specific account: improving acquisition arithmetic and candidate coverage helps BO use a small evaluation budget, while coordinate-sensitive modelling still matters on rotated anisotropic landscapes and computation costs remain substantial.
+The optional 2,100-run matrix, including dimension and nonquadratic optimisation studies, was not executed. The current evidence supports an implementation-specific account: improving acquisition arithmetic and candidate coverage helps BO use a small evaluation budget, while coordinate-sensitive modelling still matters on rotated anisotropic landscapes and computation costs remain substantial.
 
 Artifacts: [pilot convergence](../results/heldout_comparison/timing/convergence_d5_beta0.png), [pilot runtime](../results/heldout_comparison/timing/runtime.png), [pilot checkpoints](../results/heldout_comparison/timing/checkpoints.csv), [pilot summary](../results/heldout_comparison/timing/summary.json). Raw records and separate manifests are in `results/heldout_comparison/`; `source_snapshot.txt` records the executed code and `preserved_checksums.json` protects the 136 original comparison/diagnostic artifacts.
