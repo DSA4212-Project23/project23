@@ -185,21 +185,3 @@ The report is [main.pdf](report/main.pdf). Its complete LaTeX source is
 [main.tex](report/main.tex), including the inline bibliography; the two required
 figure PDFs are in `report/figures/`. Group members and student numbers appear
 at the start of the report and in [authors.md](authors.md).
-
-To compile locally with Tectonic installed, run from the repository root:
-
-```sh
-cd report
-tectonic main.tex
-cd ..
-```
-
-Alternatively, upload `report/main.tex` and `report/figures/` to an Overleaf
-project, preserve the relative folder structure, and select **XeLaTeX**.
-The bibliography requires no separate BibTeX step. The existing report has
-10 pages including references and appendix; rebuilding after edits may change
-pagination.
-
-The public repository is
-[DSA4212-Project23/project23](https://github.com/DSA4212-Project23/project23),
-matching the URL at the start of the report.
