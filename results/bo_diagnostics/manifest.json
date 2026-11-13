@@ -1,0 +1,16 @@
+{
+  "code": "72b28c22e5a1af093db5aee5431deb7bfceef2552f73c8cdbf837bebb4c3a208",
+  "baseline_checks": "c7e510c880b1e4fa6e5e67107896ecef658176a790ffafde168012b3d26d4865",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "python": "3.14.7",
+  "budget": 100,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  }
+}

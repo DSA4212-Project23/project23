@@ -1,0 +1,1304 @@
+{
+  "study": "staged",
+  "expected": 72,
+  "completed": 72,
+  "missing": [],
+  "failures": [],
+  "bootstrap_seed": 20261103,
+  "bootstrap_resamples": 10000,
+  "floor": 1e-12,
+  "contrasts": [
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 50,
+      "mean": 1.585177876251227,
+      "lower": 1.2164024553657764,
+      "upper": 2.1806476198550935,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 1.3584835535328115,
+        "0": 2.1806476198550935,
+        "1": 1.2164024553657764
+      }
+    },
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 100,
+      "mean": 2.228918232645133,
+      "lower": 2.146474700673125,
+      "upper": 2.3338875190896227,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 2.146474700673125,
+        "0": 2.206392478172651,
+        "1": 2.3338875190896227
+      }
+    },
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 250,
+      "mean": 1.4487463457900527,
+      "lower": 1.3369613929322164,
+      "upper": 1.6049135992776133,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 1.6049135992776133,
+        "0": 1.4043640451603285,
+        "1": 1.3369613929322164
+      }
+    },
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 500,
+      "mean": 1.277100078200385,
+      "lower": 1.1804311040856343,
+      "upper": 1.3369613929322164,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 1.313907737583304,
+        "0": 1.1804311040856343,
+        "1": 1.3369613929322164
+      }
+    },
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 50,
+      "mean": -0.3880067424377212,
+      "lower": -0.9082106387103653,
+      "upper": 0.16967704321322996,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": 0.16967704321322996,
+        "1": -0.4254866318160283,
+        "2": -0.9082106387103652
+      }
+    },
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 100,
+      "mean": -0.36485778179177303,
+      "lower": -0.5529713167808417,
+      "upper": -0.15731102699949173,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.15731102699949173,
+        "1": -0.38429100159498575,
+        "2": -0.5529713167808417
+      }
+    },
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 250,
+      "mean": 0.0703056877200845,
+      "lower": -0.2847580955719251,
+      "upper": 0.7417358099667322,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": 0.7417358099667322,
+        "1": -0.2847580955719251,
+        "2": -0.24606065123455356
+      }
+    },
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 500,
+      "mean": -0.37997084363046624,
+      "lower": -1.2410332728979205,
+      "upper": 0.35961223048481505,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -1.2410332728979205,
+        "1": 0.35961223048481505,
+        "2": -0.2584914884782932
+      }
+    },
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 50,
+      "mean": 0.4240412086793596,
+      "lower": -0.23361866493758787,
+      "upper": 0.827030124320889,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 0.6787121666547777,
+        "0": 0.8270301243208891,
+        "1": -0.23361866493758787
+      }
+    },
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 100,
+      "mean": 0.35712540423701117,
+      "lower": -0.6664914729961218,
+      "upper": 0.9863123092886701,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 0.9863123092886701,
+        "0": 0.7515553764184852,
+        "1": -0.6664914729961218
+      }
+    },
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 250,
+      "mean": 0.4124874182830556,
+      "lower": -0.5532943394079255,
+      "upper": 0.9833680722763622,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 0.80738852198073,
+        "0": 0.9833680722763622,
+        "1": -0.5532943394079255
+      }
+    },
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 500,
+      "mean": 0.6038160518836718,
+      "lower": 0.03687826179044773,
+      "upper": 0.8971733730403799,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 0.8773965208201879,
+        "0": 0.8971733730403799,
+        "1": 0.03687826179044773
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "method": "ard",
+      "checkpoint": 50,
+      "mean": -2.004946805973809,
+      "lower": -2.479338880870402,
+      "upper": -1.5732938080023693,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": -1.573293808002369,
+        "0": -1.962207729048655,
+        "1": -2.479338880870402
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "method": "ard",
+      "checkpoint": 100,
+      "mean": -1.43180739078271,
+      "lower": -1.580746755535242,
+      "upper": -1.2096709591169756,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": -1.5050044576959123,
+        "0": -1.2096709591169756,
+        "1": -1.580746755535242
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "method": "ard",
+      "checkpoint": 250,
+      "mean": 0.5175103406301265,
+      "lower": 0.26427784168247914,
+      "upper": 0.7593077625603751,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 0.7593077625603752,
+        "0": 0.528945417647525,
+        "1": 0.26427784168247914
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "method": "ard",
+      "checkpoint": 500,
+      "mean": 3.7063547496253224,
+      "lower": 3.3570735437613806,
+      "upper": 4.112895358511655,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 3.6490953466029312,
+        "0": 4.112895358511655,
+        "1": 3.3570735437613806
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "method": "isotropic",
+      "checkpoint": 50,
+      "mean": -1.8330702702621753,
+      "lower": -2.565402397215017,
+      "upper": -1.3000658709882875,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -1.3000658709882875,
+        "2": -1.6337425425832208,
+        "1": -2.565402397215017
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "method": "isotropic",
+      "checkpoint": 100,
+      "mean": -1.2599308550710762,
+      "lower": -1.6668102718798563,
+      "upper": -0.5475291010566081,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.5475291010566081,
+        "2": -1.565453192276764,
+        "1": -1.6668102718798563
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "method": "isotropic",
+      "checkpoint": 250,
+      "mean": 0.6893868763417602,
+      "lower": 0.17821432533786452,
+      "upper": 1.1910872757078925,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": 1.1910872757078925,
+        "2": 0.6988590279795233,
+        "1": 0.17821432533786452
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "method": "isotropic",
+      "checkpoint": 500,
+      "mean": 3.8782312853369554,
+      "lower": 3.271010027416766,
+      "upper": 4.775037216572023,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": 4.775037216572023,
+        "2": 3.588646612022079,
+        "1": 3.271010027416766
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "method": "ard",
+      "checkpoint": 50,
+      "mean": -2.4424990771403525,
+      "lower": -3.1536338621233626,
+      "upper": -2.078463891291321,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -2.095399478006373,
+        "1": -3.153633862123363,
+        "2": -2.078463891291321
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "method": "ard",
+      "checkpoint": 100,
+      "mean": -1.956782149446079,
+      "lower": -2.682223051764222,
+      "upper": -1.4409390467486034,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -1.4409390467486034,
+        "1": -2.682223051764222,
+        "2": -1.7471843498254118
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "method": "ard",
+      "checkpoint": 250,
+      "mean": 0.01652099616877985,
+      "lower": -0.7023454390690977,
+      "upper": 0.608312886326148,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": 0.608312886326148,
+        "1": -0.7023454390690977,
+        "2": 0.1435955412492893
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "method": "ard",
+      "checkpoint": 500,
+      "mean": 3.0743615574887415,
+      "lower": 2.3881996548123805,
+      "upper": 3.55353392966404,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": 3.55353392966404,
+        "1": 2.3881996548123805,
+        "2": 3.2813510879898056
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "method": "isotropic",
+      "checkpoint": 50,
+      "mean": -2.283372407093353,
+      "lower": -2.8386215204802343,
+      "upper": -1.9333120449545784,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -1.9333120449545782,
+        "1": -2.0781836558452467,
+        "2": -2.8386215204802343
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "method": "isotropic",
+      "checkpoint": 100,
+      "mean": -1.7976554793990795,
+      "lower": -2.507341979014325,
+      "upper": -1.2788516136968082,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -1.2788516136968082,
+        "1": -1.6067728454861057,
+        "2": -2.507341979014325
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "method": "isotropic",
+      "checkpoint": 250,
+      "mean": 0.17564766621577924,
+      "lower": -0.6165620879396241,
+      "upper": 0.7704003193779432,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": 0.7704003193779432,
+        "1": 0.37310476720901864,
+        "2": -0.6165620879396241
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "method": "isotropic",
+      "checkpoint": 500,
+      "mean": 3.2334882275357413,
+      "lower": 2.521193458800892,
+      "upper": 3.7156213627158348,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": 3.7156213627158348,
+        "1": 3.463649861090497,
+        "2": 2.521193458800892
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "method": "ard",
+      "checkpoint": 50,
+      "mean": -2.333247078053207,
+      "lower": -2.478750452441445,
+      "upper": -2.0977350960693526,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -2.423255685648823,
+        "1": -2.478750452441445,
+        "2": -2.0977350960693526
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "method": "ard",
+      "checkpoint": 100,
+      "mean": -3.172981331657638,
+      "lower": -3.2287652942222755,
+      "upper": -3.0699097022565223,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -3.2202689984941157,
+        "1": -3.0699097022565223,
+        "2": -3.228765294222275
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "method": "ard",
+      "checkpoint": 250,
+      "mean": -2.0730037015595824,
+      "lower": -2.1720446570321768,
+      "upper": -1.8800300631242484,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -1.8800300631242484,
+        "1": -2.1720446570321768,
+        "2": -2.1669363845223213
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "method": "ard",
+      "checkpoint": 500,
+      "mean": -0.2785421331493059,
+      "lower": -0.5788188474930909,
+      "upper": -0.012959693590511634,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.5788188474930909,
+        "1": -0.012959693590511634,
+        "2": -0.24384785836431533
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "method": "isotropic",
+      "checkpoint": 50,
+      "mean": -0.5536050779380732,
+      "lower": -0.9775073975770906,
+      "upper": -0.2997618041344905,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.2997618041344905,
+        "1": -0.9775073975770906,
+        "2": -0.3835460321026385
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "method": "isotropic",
+      "checkpoint": 100,
+      "mean": -0.6464776791543454,
+      "lower": -0.8905890771281421,
+      "upper": -0.36822857900307504,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.8905890771281422,
+        "1": -0.36822857900307504,
+        "2": -0.680615381331819
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "method": "isotropic",
+      "checkpoint": 250,
+      "mean": -0.4354942213188156,
+      "lower": -0.559967353846283,
+      "upper": -0.24012535155935044,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.5063899585508134,
+        "1": -0.559967353846283,
+        "2": -0.24012535155935044
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "method": "isotropic",
+      "checkpoint": 500,
+      "mean": 0.7708964560445616,
+      "lower": 0.5390652509089686,
+      "upper": 0.931979667882656,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": 0.5390652509089686,
+        "1": 0.8416444493420601,
+        "2": 0.931979667882656
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "method": "ard",
+      "checkpoint": 50,
+      "mean": -0.7976147305308023,
+      "lower": -1.5111563465126014,
+      "upper": -0.33621098711512776,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": -0.33621098711512776,
+        "0": -0.5454768579646779,
+        "1": -1.5111563465126014
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "method": "ard",
+      "checkpoint": 100,
+      "mean": -1.104180075884101,
+      "lower": -1.4532074778008939,
+      "upper": -0.7714991688978081,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": -0.7714991688978081,
+        "0": -1.0878335809536004,
+        "1": -1.4532074778008939
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "method": "ard",
+      "checkpoint": 250,
+      "mean": -1.1955523879509604,
+      "lower": -1.516948449279612,
+      "upper": -0.9316743553212404,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": -0.9316743553212403,
+        "0": -1.138034359252029,
+        "1": -1.516948449279612
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "method": "ard",
+      "checkpoint": 500,
+      "mean": 0.7465355965449648,
+      "lower": -0.004484420092110142,
+      "upper": 1.2832841006428484,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 0.9608071090841563,
+        "0": 1.2832841006428484,
+        "1": -0.004484420092110142
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "method": "isotropic",
+      "checkpoint": 50,
+      "mean": -0.1918592636521703,
+      "lower": -0.2984206893288801,
+      "upper": -0.0015022046345087858,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": -0.0015022046345087858,
+        "0": -0.27565489699312196,
+        "1": -0.2984206893288801
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "method": "isotropic",
+      "checkpoint": 100,
+      "mean": -0.46221911745356464,
+      "lower": -0.7130451863503652,
+      "upper": -0.08322054199986839,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": -0.08322054199986839,
+        "0": -0.7130451863503653,
+        "1": -0.5903916240104603
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "method": "isotropic",
+      "checkpoint": 250,
+      "mean": -0.6070517008818254,
+      "lower": -0.6854446525711326,
+      "upper": -0.5020972942632143,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": -0.5020972942632143,
+        "0": -0.6854446525711326,
+        "1": -0.6336131558111293
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "method": "isotropic",
+      "checkpoint": 500,
+      "mean": 1.1099402937574852,
+      "lower": 0.7115503143214239,
+      "upper": 1.6178560429910813,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 1.0004145239599502,
+        "0": 1.617856042991081,
+        "1": 0.7115503143214239
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 50,
+      "mean": -0.22643484671839506,
+      "lower": -0.4412818255655069,
+      "upper": -0.02526205073825527,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.212760663851423,
+        "1": -0.4412818255655069,
+        "2": -0.02526205073825527
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 100,
+      "mean": -0.22643484671839506,
+      "lower": -0.4412818255655069,
+      "upper": -0.02526205073825527,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.212760663851423,
+        "1": -0.4412818255655069,
+        "2": -0.02526205073825527
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 250,
+      "mean": -0.22643484671839506,
+      "lower": -0.4412818255655069,
+      "upper": -0.02526205073825527,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.212760663851423,
+        "1": -0.4412818255655069,
+        "2": -0.02526205073825527
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 500,
+      "mean": -0.22643484671839506,
+      "lower": -0.4412818255655069,
+      "upper": -0.02526205073825527,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.212760663851423,
+        "1": -0.4412818255655069,
+        "2": -0.02526205073825527
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 50,
+      "mean": 0.21111742444814863,
+      "lower": -0.07956891489370477,
+      "upper": 0.4799080325506966,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.07956891489370477,
+        "2": 0.4799080325506966,
+        "1": 0.23301315568745407
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 100,
+      "mean": 0.2985399119449742,
+      "lower": 0.018507423780204757,
+      "upper": 0.6601944706634734,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": 0.018507423780204757,
+        "2": 0.21691784139124448,
+        "1": 0.6601944706634734
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 250,
+      "mean": 0.27455449774295154,
+      "lower": -0.292128132530046,
+      "upper": 0.5904501705728307,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.292128132530046,
+        "2": 0.5904501705728307,
+        "1": 0.52534145518607
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 500,
+      "mean": 0.40555834541818525,
+      "lower": 0.34248220787487016,
+      "upper": 0.527592063383493,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": 0.34660076499619263,
+        "2": 0.34248220787487016,
+        "1": 0.527592063383493
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 50,
+      "mean": -0.2391847123830293,
+      "lower": -0.7249709453463167,
+      "upper": 0.7202318970572241,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.7128150888599953,
+        "1": 0.7202318970572241,
+        "2": -0.7249709453463167
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 100,
+      "mean": -0.2391847123830293,
+      "lower": -0.7249709453463167,
+      "upper": 0.7202318970572241,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.7128150888599953,
+        "1": 0.7202318970572241,
+        "2": -0.7249709453463167
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 250,
+      "mean": -0.2391847123830293,
+      "lower": -0.7249709453463167,
+      "upper": 0.7202318970572241,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.7128150888599953,
+        "1": 0.7202318970572241,
+        "2": -0.7249709453463167
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 500,
+      "mean": -0.2391847123830293,
+      "lower": -0.7249709453463167,
+      "upper": 0.7202318970572241,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.7128150888599953,
+        "1": 0.7202318970572241,
+        "2": -0.7249709453463167
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 50,
+      "mean": 1.358743029532832,
+      "lower": 0.7751206298002695,
+      "upper": 1.9678869560036703,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 1.3332215027945562,
+        "0": 1.9678869560036705,
+        "1": 0.7751206298002695
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 100,
+      "mean": 2.002483385926738,
+      "lower": 1.892605693524116,
+      "upper": 2.1212126499348694,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 2.1212126499348694,
+        "0": 1.9936318143212282,
+        "1": 1.892605693524116
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 250,
+      "mean": 1.2223114990716577,
+      "lower": 0.8956795673667095,
+      "upper": 1.579651548539358,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 1.579651548539358,
+        "0": 1.1916033813089055,
+        "1": 0.8956795673667095
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 500,
+      "mean": 1.0506652314819898,
+      "lower": 0.8956795673667095,
+      "upper": 1.2886456868450487,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 1.2886456868450487,
+        "0": 0.9676704402342113,
+        "1": 0.8956795673667095
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 50,
+      "mean": -0.17688931798957255,
+      "lower": -0.42830260615966864,
+      "upper": 0.0901081283195252,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": 0.0901081283195252,
+        "1": -0.19247347612857424,
+        "2": -0.42830260615966864
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 100,
+      "mean": -0.06631786984679884,
+      "lower": -0.3360534753895972,
+      "upper": 0.2759034690684876,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.13880360321928698,
+        "1": 0.2759034690684876,
+        "2": -0.3360534753895972
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 250,
+      "mean": 0.34486018546303604,
+      "lower": 0.2405833596141449,
+      "upper": 0.44960767743668617,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": 0.44960767743668617,
+        "1": 0.2405833596141449,
+        "2": 0.3443895193382771
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 500,
+      "mean": 0.02558750178771903,
+      "lower": -0.8944325079017279,
+      "upper": 0.887204293868308,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "0": -0.8944325079017279,
+        "1": 0.887204293868308,
+        "2": 0.08399071939657698
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 50,
+      "mean": 0.18485649629633036,
+      "lower": -0.04625877869153894,
+      "upper": 0.4866132321196363,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": -0.04625877869153894,
+        "0": 0.11421503546089373,
+        "1": 0.48661323211963625
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 100,
+      "mean": 0.11794069185398189,
+      "lower": 0.038740287558489905,
+      "upper": 0.2613413639423534,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 0.2613413639423534,
+        "0": 0.038740287558489905,
+        "1": 0.053740424061102354
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 250,
+      "mean": 0.17330270590002628,
+      "lower": 0.08241757663441329,
+      "upper": 0.2705529834163669,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 0.08241757663441329,
+        "0": 0.2705529834163669,
+        "1": 0.16693755764929863
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 500,
+      "mean": 0.3646313395006426,
+      "lower": 0.15242557547387126,
+      "upper": 0.7571101588476719,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "2": 0.15242557547387126,
+        "0": 0.18435828418038458,
+        "1": 0.7571101588476719
+      }
+    }
+  ]
+}

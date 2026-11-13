@@ -1,0 +1,486 @@
+{
+  "fingerprint": {
+    "code": "72b28c22e5a1af093db5aee5431deb7bfceef2552f73c8cdbf837bebb4c3a208",
+    "baseline_checks": "c7e510c880b1e4fa6e5e67107896ecef658176a790ffafde168012b3d26d4865",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "python": "3.14.7",
+    "budget": 100,
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    }
+  },
+  "records": [
+    {
+      "kernel": "isotropic",
+      "conditioning": 1,
+      "orientation": "aligned",
+      "evaluation": 50,
+      "variant": "baseline",
+      "kernel_theta": [
+        6.531166700702344,
+        2.302585092994046
+      ],
+      "candidate": [
+        -0.08914283708482182,
+        0.20164029740444944,
+        -0.2966528764639936,
+        0.251961058082194,
+        0.17698973165009085
+      ],
+      "mean": 0.11891154203112941,
+      "std": 0.007826814720808789,
+      "observed_best": 0.0008963399274211913,
+      "offline_loss": 0.1147076460493881,
+      "fit_warnings": [
+        "The optimal value found for dimension 0 of parameter k2__length_scale is close to the specified upper bound 10.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 1,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 473,
+      "finite_log_ei": 512,
+      "std_min": 0.00403029966336414,
+      "std_max": 0.08778454673185461,
+      "z_min": -82.93008090150211,
+      "z_max": -15.078318374315625,
+      "best_pool_log_ei": -124.88649408991077,
+      "best_pool_ei": 5.787416691578546e-55,
+      "selected_log_ei": -124.88649408991077,
+      "selected_ei": 5.787416691578546e-55
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 1,
+      "orientation": "aligned",
+      "evaluation": 50,
+      "variant": "logei",
+      "kernel_theta": [
+        6.531166700702344,
+        2.302585092994046
+      ],
+      "candidate": [
+        -0.0013303669723366254,
+        0.10041939980050572,
+        -0.07069748432383081,
+        0.10659065773730056,
+        0.1872880549605236
+      ],
+      "mean": -0.00025012361347920287,
+      "std": 0.0003680889509420545,
+      "observed_best": 0.0008963399274211913,
+      "offline_loss": 3.0697251879520226e-05,
+      "fit_warnings": [
+        "The optimal value found for dimension 0 of parameter k2__length_scale is close to the specified upper bound 10.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 473,
+      "finite_log_ei": 512,
+      "std_min": 0.00403029966336414,
+      "std_max": 0.08778454673185461,
+      "z_min": -82.93008090150211,
+      "z_max": -15.078318374315625,
+      "best_pool_log_ei": -124.88649408991077,
+      "best_pool_ei": 5.787416691578546e-55,
+      "selected_log_ei": -6.770991980102654,
+      "selected_ei": 0.0011465567251369802
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 1,
+      "orientation": "aligned",
+      "evaluation": 50,
+      "variant": "local",
+      "kernel_theta": [
+        6.531166700702344,
+        2.302585092994046
+      ],
+      "candidate": [
+        -0.00222728119717371,
+        0.10176840575779218,
+        -0.06769010081376817,
+        0.10727319678379268,
+        0.1863903521395501
+      ],
+      "mean": -0.00026671177222115094,
+      "std": 0.00038567717893785863,
+      "observed_best": 0.0008963399274211913,
+      "offline_loss": 2.7833694973635236e-05,
+      "fit_warnings": [
+        "The optimal value found for dimension 0 of parameter k2__length_scale is close to the specified upper bound 10.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 484,
+      "finite_log_ei": 512,
+      "std_min": 6.115930282839545e-05,
+      "std_max": 0.08778454673185461,
+      "z_min": -82.93008090150211,
+      "z_max": 5.552282329194981,
+      "best_pool_log_ei": -7.533770315584288,
+      "best_pool_ei": 0.0005347183942237902,
+      "selected_log_ei": -6.75658804679866,
+      "selected_ei": 0.0011631911648157679
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 1,
+      "orientation": "aligned",
+      "evaluation": 50,
+      "variant": "logei_local",
+      "kernel_theta": [
+        6.531166700702344,
+        2.302585092994046
+      ],
+      "candidate": [
+        -0.002474318634761485,
+        0.10162753428535055,
+        -0.06770062353394234,
+        0.10696802553287839,
+        0.18580873130080144
+      ],
+      "mean": -0.00026648588565492126,
+      "std": 0.0003878089191155517,
+      "observed_best": 0.0008963399274211913,
+      "offline_loss": 2.987275075032383e-05,
+      "fit_warnings": [
+        "The optimal value found for dimension 0 of parameter k2__length_scale is close to the specified upper bound 10.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 484,
+      "finite_log_ei": 512,
+      "std_min": 6.115930282839545e-05,
+      "std_max": 0.08778454673185461,
+      "z_min": -82.93008090150211,
+      "z_max": 5.552282329194981,
+      "best_pool_log_ei": -7.533770315584288,
+      "best_pool_ei": 0.0005347183942237902,
+      "selected_log_ei": -6.756774063365436,
+      "selected_ei": 0.0011629748121120022
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 1,
+      "orientation": "aligned",
+      "evaluation": 86,
+      "variant": "baseline",
+      "kernel_theta": [
+        6.0711549447949675,
+        2.302585092994046
+      ],
+      "candidate": [
+        0.3213194561136565,
+        0.05071711446193127,
+        -0.44130829238274544,
+        -0.6202972467149279,
+        -0.19669337087319616
+      ],
+      "mean": 1.2010378286877017,
+      "std": 0.019032363740006088,
+      "observed_best": 0.0008963399274211913,
+      "offline_loss": 1.191703477160006,
+      "fit_warnings": [
+        "The optimal value found for dimension 0 of parameter k2__length_scale is close to the specified upper bound 10.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": true,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 0,
+      "finite_log_ei": 512,
+      "std_min": 0.0014783513853144313,
+      "std_max": 0.04072057118881653,
+      "z_min": -128.678860139597,
+      "z_max": -38.71592896148012,
+      "best_pool_log_ei": -761.6986455810418,
+      "best_pool_ei": 0.0,
+      "selected_ei": 0.0
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 1,
+      "orientation": "aligned",
+      "evaluation": 86,
+      "variant": "logei",
+      "kernel_theta": [
+        6.0711549447949675,
+        2.302585092994046
+      ],
+      "candidate": [
+        -0.6344804510866124,
+        -0.11142984589314966,
+        -0.6142071129244583,
+        -0.41040737938096866,
+        0.19832584653454577
+      ],
+      "mean": 1.2924387196741454,
+      "std": 0.03524955570850939,
+      "observed_best": 0.0008963399274211913,
+      "offline_loss": 1.2948183241346367,
+      "fit_warnings": [
+        "The optimal value found for dimension 0 of parameter k2__length_scale is close to the specified upper bound 10.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 0,
+      "finite_log_ei": 512,
+      "std_min": 0.0014783513853144313,
+      "std_max": 0.04072057118881653,
+      "z_min": -128.678860139597,
+      "z_max": -38.71592896148012,
+      "best_pool_log_ei": -761.6986455810418,
+      "best_pool_ei": 0.0,
+      "selected_log_ei": -682.7121547573656,
+      "selected_ei": 3.175985132016028e-297
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 1,
+      "orientation": "aligned",
+      "evaluation": 86,
+      "variant": "local",
+      "kernel_theta": [
+        6.0711549447949675,
+        2.302585092994046
+      ],
+      "candidate": [
+        -0.005194894298044222,
+        0.10160036430508129,
+        -0.07021200085230025,
+        0.10901139875189422,
+        0.18864464062841707
+      ],
+      "mean": 3.9989941453044686e-05,
+      "std": 0.00018160153106668212,
+      "observed_best": 0.0008963399274211913,
+      "offline_loss": 2.453915607753883e-06,
+      "fit_warnings": [
+        "The optimal value found for dimension 0 of parameter k2__length_scale is close to the specified upper bound 10.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 128,
+      "finite_log_ei": 512,
+      "std_min": 4.959467200389087e-05,
+      "std_max": 0.04072057118881653,
+      "z_min": -128.678860139597,
+      "z_max": 7.004625524641695,
+      "best_pool_log_ei": -7.71627306957506,
+      "best_pool_ei": 0.00044551792793932584,
+      "selected_log_ei": -7.062831180008557,
+      "selected_ei": 0.000856350177159428
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 1,
+      "orientation": "aligned",
+      "evaluation": 86,
+      "variant": "logei_local",
+      "kernel_theta": [
+        6.0711549447949675,
+        2.302585092994046
+      ],
+      "candidate": [
+        -0.006324242195428992,
+        0.10176745916233214,
+        -0.06936291241508352,
+        0.10742745184350368,
+        0.18847460430271376
+      ],
+      "mean": 3.863490250133328e-05,
+      "std": 0.00017921903368868505,
+      "observed_best": 0.0008963399274211913,
+      "offline_loss": 1.9017310228752506e-06,
+      "fit_warnings": [
+        "The optimal value found for dimension 0 of parameter k2__length_scale is close to the specified upper bound 10.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 128,
+      "finite_log_ei": 512,
+      "std_min": 4.959467200389087e-05,
+      "std_max": 0.04072057118881653,
+      "z_min": -128.678860139597,
+      "z_max": 7.004625524641695,
+      "best_pool_log_ei": -7.71627306957506,
+      "best_pool_ei": 0.00044551792793932584,
+      "selected_log_ei": -7.061250200097453,
+      "selected_ei": 0.0008577051203731652
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 1,
+      "orientation": "aligned",
+      "evaluation": 100,
+      "variant": "baseline",
+      "kernel_theta": [
+        5.997725985914479,
+        2.302585092994046
+      ],
+      "candidate": [
+        0.2309291685815272,
+        0.280341261222826,
+        0.8960391085441017,
+        -0.11486902926223633,
+        0.17626786432318756
+      ],
+      "mean": 1.376913473797684,
+      "std": 0.020670094050208587,
+      "observed_best": 0.0008963399274211913,
+      "offline_loss": 1.378681129297275,
+      "fit_warnings": [
+        "The optimal value found for dimension 0 of parameter k2__length_scale is close to the specified upper bound 10.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": true,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 0,
+      "finite_log_ei": 512,
+      "std_min": 0.0014960592700489631,
+      "std_max": 0.033059944729314804,
+      "z_min": -779.6583701869338,
+      "z_max": -42.749678025085295,
+      "best_pool_log_ei": -928.7037066890691,
+      "best_pool_ei": 0.0,
+      "selected_ei": 0.0
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 1,
+      "orientation": "aligned",
+      "evaluation": 100,
+      "variant": "logei",
+      "kernel_theta": [
+        5.997725985914479,
+        2.302585092994046
+      ],
+      "candidate": [
+        -0.036398655344579825,
+        0.12189073389812573,
+        -0.10393726336454091,
+        0.11423188687558426,
+        0.21559682383919088
+      ],
+      "mean": 0.004088667678540436,
+      "std": 0.0002950014494486866,
+      "observed_best": 0.0008963399274211913,
+      "offline_loss": 0.004202162060475614,
+      "fit_warnings": [
+        "The optimal value found for dimension 0 of parameter k2__length_scale is close to the specified upper bound 10.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 1,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 0,
+      "finite_log_ei": 512,
+      "std_min": 0.0014960592700489631,
+      "std_max": 0.033059944729314804,
+      "z_min": -779.6583701869338,
+      "z_max": -42.749678025085295,
+      "best_pool_log_ei": -928.7037066890691,
+      "best_pool_ei": 0.0,
+      "selected_log_ei": -72.38677298853887,
+      "selected_ei": 3.6544660218344873e-32
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 1,
+      "orientation": "aligned",
+      "evaluation": 100,
+      "variant": "local",
+      "kernel_theta": [
+        5.997725985914479,
+        2.302585092994046
+      ],
+      "candidate": [
+        -0.006256258366533687,
+        0.1023576075072845,
+        -0.07080684802291963,
+        0.10810632921265975,
+        0.18946754273313682
+      ],
+      "mean": 6.0929412814880735e-05,
+      "std": 0.00014643156341708353,
+      "observed_best": 0.0008963399274211913,
+      "offline_loss": 2.8226159965346e-06,
+      "fit_warnings": [
+        "The optimal value found for dimension 0 of parameter k2__length_scale is close to the specified upper bound 10.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 124,
+      "finite_log_ei": 512,
+      "std_min": 4.761806969645368e-05,
+      "std_max": 0.033059944729314804,
+      "z_min": -174.62773685680548,
+      "z_max": 6.303096975460628,
+      "best_pool_log_ei": -7.738206702038892,
+      "best_pool_ei": 0.0004358524880427908,
+      "selected_log_ei": -7.08758731949789,
+      "selected_ei": 0.0008354105147474957
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 1,
+      "orientation": "aligned",
+      "evaluation": 100,
+      "variant": "logei_local",
+      "kernel_theta": [
+        5.997725985914479,
+        2.302585092994046
+      ],
+      "candidate": [
+        -0.006980324742962184,
+        0.10197675225530213,
+        -0.07154175447807642,
+        0.10811075303328957,
+        0.18889947567807555
+      ],
+      "mean": 6.19656247592415e-05,
+      "std": 0.00014296574753127277,
+      "observed_best": 0.0008963399274211913,
+      "offline_loss": 5.555032351045469e-06,
+      "fit_warnings": [
+        "The optimal value found for dimension 0 of parameter k2__length_scale is close to the specified upper bound 10.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 124,
+      "finite_log_ei": 512,
+      "std_min": 4.761806969645368e-05,
+      "std_max": 0.033059944729314804,
+      "z_min": -174.62773685680548,
+      "z_max": 6.303096975460628,
+      "best_pool_log_ei": -7.738206702038892,
+      "best_pool_ei": 0.0004358524880427908,
+      "selected_log_ei": -7.088828432752594,
+      "selected_ei": 0.0008343743188357742
+    }
+  ]
+}

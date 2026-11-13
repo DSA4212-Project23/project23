@@ -1,0 +1,1007 @@
+{
+  "schema_version": 1,
+  "master_seed": 20261102,
+  "description": "Evaluator configuration only; no optimisation runs have been performed.",
+  "domain": "unit Euclidean ball",
+  "noise": "none",
+  "budget": 500,
+  "checkpoints": [
+    50,
+    100,
+    250,
+    500
+  ],
+  "runs_per_instance": 5,
+  "initial_design_size": "2 * dimension + 1",
+  "run_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "conditions": 14,
+  "instances_per_condition": 10,
+  "problems": [
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 0
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 1
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 2
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 3
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 4
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 5
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 6
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 7
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 8
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 9
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 0
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 1
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 2
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 3
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 4
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 5
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 6
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 7
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 8
+    },
+    {
+      "dimension": 5,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 9
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 0
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 1
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 2
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 3
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 4
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 5
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 6
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 7
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 8
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 9
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 0
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 1
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 2
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 3
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 4
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 5
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 6
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 7
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 8
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 9
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 0
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 1
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 2
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 3
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 4
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 5
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 6
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 7
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 8
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 9
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 0
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 1
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 2
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 3
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 4
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 5
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 6
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 7
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 8
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 9
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 0
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 1
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 2
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 3
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 4
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 5
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 6
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 7
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 8
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 9
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 0
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 1
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 2
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 3
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 4
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 5
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 6
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 7
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 8
+    },
+    {
+      "dimension": 10,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 9
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 0
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 1
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 2
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 3
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 4
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 5
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 6
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 7
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 8
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 0,
+      "instance": 9
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 0
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 1
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 2
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 3
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 4
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 5
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 6
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 7
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 8
+    },
+    {
+      "dimension": 10,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 0,
+      "instance": 9
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 0
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 1
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 2
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 3
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 4
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 5
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 6
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 7
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 8
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 9
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 0
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 1
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 2
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 3
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 4
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 5
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 6
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 7
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 8
+    },
+    {
+      "dimension": 5,
+      "conditioning": 100,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 9
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 0
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 1
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 2
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 3
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 4
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 5
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 6
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 7
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 8
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "beta": 1,
+      "instance": 9
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 0
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 1
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 2
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 3
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 4
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 5
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 6
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 7
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 8
+    },
+    {
+      "dimension": 5,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "beta": 1,
+      "instance": 9
+    }
+  ]
+}

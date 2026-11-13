@@ -1,0 +1,900 @@
+{
+  "study": "staged",
+  "fingerprint": {
+    "code_sha256": "c0b4ce1da7cef4d0f9ab082284a9b6d567e02ee593d56e9b1734210ef5206b7d",
+    "versions": {
+      "python": "3.14.7",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "sklearn": "1.9.1",
+      "cma": "4.5.0",
+      "threadpoolctl": "3.8.0"
+    },
+    "budget": 500,
+    "master_seed": 20261102,
+    "threads": 1,
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "numpy_blas": {
+      "name": "accelerate",
+      "found": true,
+      "version": "unknown",
+      "detection method": "system",
+      "include directory": "unknown",
+      "lib directory": "unknown",
+      "openblas configuration": "unknown",
+      "pc file directory": "unknown"
+    }
+  },
+  "jobs": [
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 0,
+      "method": "isotropic",
+      "file": "isotropic_d5_k1_aligned_beta0_i0_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 0,
+      "method": "ard",
+      "file": "ard_d5_k1_rotated_beta0_i0_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 1,
+      "method": "isotropic",
+      "file": "isotropic_d5_k10000_rotated_beta0_i2_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 1,
+      "method": "isotropic",
+      "file": "isotropic_d5_k1_aligned_beta0_i0_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 0,
+      "method": "isotropic",
+      "file": "isotropic_d5_k10000_aligned_beta0_i0_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 1,
+      "method": "ard",
+      "file": "ard_d5_k1_rotated_beta0_i1_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 0,
+      "method": "cmaes",
+      "file": "cmaes_d5_k10000_aligned_beta0_i1_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 1,
+      "method": "cmaes",
+      "file": "cmaes_d5_k10000_aligned_beta0_i1_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 1,
+      "method": "ard",
+      "file": "ard_d5_k1_aligned_beta0_i2_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 0,
+      "method": "ard",
+      "file": "ard_d5_k10000_rotated_beta0_i2_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 1,
+      "method": "ard",
+      "file": "ard_d5_k1_rotated_beta0_i2_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 1,
+      "method": "cmaes",
+      "file": "cmaes_d5_k10000_aligned_beta0_i2_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 1,
+      "method": "isotropic",
+      "file": "isotropic_d5_k10000_rotated_beta0_i0_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 0,
+      "method": "isotropic",
+      "file": "isotropic_d5_k1_aligned_beta0_i2_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 0,
+      "method": "cmaes",
+      "file": "cmaes_d5_k1_rotated_beta0_i0_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 0,
+      "method": "ard",
+      "file": "ard_d5_k1_rotated_beta0_i1_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 1,
+      "method": "isotropic",
+      "file": "isotropic_d5_k1_aligned_beta0_i2_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 0,
+      "method": "isotropic",
+      "file": "isotropic_d5_k1_rotated_beta0_i0_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 0,
+      "method": "ard",
+      "file": "ard_d5_k10000_rotated_beta0_i0_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 0,
+      "method": "cmaes",
+      "file": "cmaes_d5_k1_rotated_beta0_i2_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 0,
+      "method": "isotropic",
+      "file": "isotropic_d5_k10000_rotated_beta0_i2_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 0,
+      "method": "isotropic",
+      "file": "isotropic_d5_k10000_rotated_beta0_i0_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 1,
+      "method": "isotropic",
+      "file": "isotropic_d5_k10000_aligned_beta0_i1_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 0,
+      "method": "cmaes",
+      "file": "cmaes_d5_k10000_rotated_beta0_i0_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 0,
+      "method": "ard",
+      "file": "ard_d5_k10000_aligned_beta0_i0_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 1,
+      "method": "ard",
+      "file": "ard_d5_k10000_aligned_beta0_i0_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 1,
+      "method": "ard",
+      "file": "ard_d5_k10000_rotated_beta0_i2_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 0,
+      "method": "cmaes",
+      "file": "cmaes_d5_k10000_rotated_beta0_i1_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 1,
+      "method": "cmaes",
+      "file": "cmaes_d5_k1_aligned_beta0_i0_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 0,
+      "method": "cmaes",
+      "file": "cmaes_d5_k1_aligned_beta0_i2_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 0,
+      "method": "ard",
+      "file": "ard_d5_k10000_rotated_beta0_i1_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 0,
+      "method": "ard",
+      "file": "ard_d5_k1_aligned_beta0_i2_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 1,
+      "method": "cmaes",
+      "file": "cmaes_d5_k10000_aligned_beta0_i0_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 0,
+      "method": "isotropic",
+      "file": "isotropic_d5_k10000_rotated_beta0_i1_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 0,
+      "method": "isotropic",
+      "file": "isotropic_d5_k1_rotated_beta0_i1_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 1,
+      "method": "isotropic",
+      "file": "isotropic_d5_k1_rotated_beta0_i0_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 1,
+      "method": "isotropic",
+      "file": "isotropic_d5_k10000_rotated_beta0_i1_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 1,
+      "method": "ard",
+      "file": "ard_d5_k10000_rotated_beta0_i0_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 0,
+      "method": "isotropic",
+      "file": "isotropic_d5_k10000_aligned_beta0_i1_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 1,
+      "method": "isotropic",
+      "file": "isotropic_d5_k10000_aligned_beta0_i2_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 0,
+      "method": "ard",
+      "file": "ard_d5_k10000_aligned_beta0_i1_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 1,
+      "method": "cmaes",
+      "file": "cmaes_d5_k1_rotated_beta0_i1_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 1,
+      "method": "isotropic",
+      "file": "isotropic_d5_k10000_aligned_beta0_i0_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 0,
+      "method": "isotropic",
+      "file": "isotropic_d5_k10000_aligned_beta0_i2_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 0,
+      "method": "cmaes",
+      "file": "cmaes_d5_k1_rotated_beta0_i1_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 1,
+      "method": "ard",
+      "file": "ard_d5_k1_rotated_beta0_i0_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 1,
+      "method": "isotropic",
+      "file": "isotropic_d5_k1_aligned_beta0_i1_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 0,
+      "method": "ard",
+      "file": "ard_d5_k1_rotated_beta0_i2_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 1,
+      "method": "cmaes",
+      "file": "cmaes_d5_k1_rotated_beta0_i0_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 0,
+      "method": "cmaes",
+      "file": "cmaes_d5_k10000_rotated_beta0_i2_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 1,
+      "method": "ard",
+      "file": "ard_d5_k1_aligned_beta0_i0_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 0,
+      "method": "ard",
+      "file": "ard_d5_k10000_aligned_beta0_i2_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 1,
+      "method": "isotropic",
+      "file": "isotropic_d5_k1_rotated_beta0_i1_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 1,
+      "method": "isotropic",
+      "file": "isotropic_d5_k1_rotated_beta0_i2_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 0,
+      "method": "cmaes",
+      "file": "cmaes_d5_k1_aligned_beta0_i1_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 1,
+      "method": "cmaes",
+      "file": "cmaes_d5_k10000_rotated_beta0_i2_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 1,
+      "method": "ard",
+      "file": "ard_d5_k10000_aligned_beta0_i1_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 1,
+      "method": "ard",
+      "file": "ard_d5_k10000_rotated_beta0_i1_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 0,
+      "method": "ard",
+      "file": "ard_d5_k1_aligned_beta0_i0_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 1,
+      "method": "cmaes",
+      "file": "cmaes_d5_k1_aligned_beta0_i2_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 1,
+      "method": "ard",
+      "file": "ard_d5_k1_aligned_beta0_i1_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 1,
+      "method": "cmaes",
+      "file": "cmaes_d5_k1_rotated_beta0_i2_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 1,
+      "method": "ard",
+      "file": "ard_d5_k10000_aligned_beta0_i2_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 0,
+      "method": "cmaes",
+      "file": "cmaes_d5_k1_aligned_beta0_i0_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 0,
+      "method": "isotropic",
+      "file": "isotropic_d5_k1_rotated_beta0_i2_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 0,
+      "method": "isotropic",
+      "file": "isotropic_d5_k1_aligned_beta0_i1_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 1,
+      "method": "cmaes",
+      "file": "cmaes_d5_k1_aligned_beta0_i1_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 2
+      },
+      "run": 0,
+      "method": "cmaes",
+      "file": "cmaes_d5_k10000_aligned_beta0_i2_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 1,
+      "method": "cmaes",
+      "file": "cmaes_d5_k10000_rotated_beta0_i0_r1_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 0,
+      "method": "ard",
+      "file": "ard_d5_k1_aligned_beta0_i1_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 0
+      },
+      "run": 0,
+      "method": "cmaes",
+      "file": "cmaes_d5_k10000_aligned_beta0_i0_r0_b500.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 1
+      },
+      "run": 1,
+      "method": "cmaes",
+      "file": "cmaes_d5_k10000_rotated_beta0_i1_r1_b500.json"
+    }
+  ]
+}

@@ -1,0 +1,660 @@
+{
+  "study": "heldout",
+  "budget": 100,
+  "bo_variant": "logei_local",
+  "expected": 72,
+  "completed": 72,
+  "missing": [],
+  "failures": [],
+  "bootstrap_seed": 20261103,
+  "bootstrap_resamples": 10000,
+  "floor": 1e-12,
+  "contrasts": [
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 50,
+      "mean": 1.869441020650943,
+      "lower": 1.778061580881077,
+      "upper": 1.9475082571174884,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "5": 1.8827532239542635,
+        "3": 1.7780615808810771,
+        "4": 1.9475082571174887
+      }
+    },
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 100,
+      "mean": 2.8642963455017334,
+      "lower": 2.526051515215353,
+      "upper": 3.2049487424677188,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "5": 2.8618887788221294,
+        "3": 2.526051515215353,
+        "4": 3.2049487424677188
+      }
+    },
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 50,
+      "mean": 0.005037551153869724,
+      "lower": -0.21831952660930765,
+      "upper": 0.33541908545702287,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -0.101986905386106,
+        "4": -0.21831952660930765,
+        "5": 0.3354190854570228
+      }
+    },
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 100,
+      "mean": 0.32299337219299884,
+      "lower": 0.22611541455886874,
+      "upper": 0.38057056249047144,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": 0.3622941395296563,
+        "4": 0.22611541455886874,
+        "5": 0.3805705624904715
+      }
+    },
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 50,
+      "mean": 0.15211720369843537,
+      "lower": -0.2091462760232341,
+      "upper": 0.38722261452009366,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "5": -0.2091462760232341,
+        "3": 0.38722261452009366,
+        "4": 0.27827527259844653
+      }
+    },
+    {
+      "kind": "interaction",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 100,
+      "mean": -0.04415130092970313,
+      "lower": -0.14139274468707086,
+      "upper": 0.13203947113971215,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "5": -0.14139274468707086,
+        "3": -0.12310062924175069,
+        "4": 0.13203947113971215
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "method": "ard",
+      "checkpoint": 50,
+      "mean": -4.123495471311818,
+      "lower": -4.401724714935542,
+      "upper": -3.874025213419269,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "5": -4.401724714935542,
+        "3": -4.094736485580643,
+        "4": -3.874025213419269
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "method": "ard",
+      "checkpoint": 100,
+      "mean": -3.6870827534959623,
+      "lower": -4.059973449223358,
+      "upper": -3.278651474089236,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "5": -4.059973449223358,
+        "3": -3.722623337175291,
+        "4": -3.2786514740892363
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "method": "isotropic",
+      "checkpoint": 50,
+      "mean": -4.121307850223876,
+      "lower": -4.47443884526086,
+      "upper": -3.8841523111185925,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -3.8841523111185925,
+        "5": -4.47443884526086,
+        "4": -4.005332394292175
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "aligned",
+      "method": "isotropic",
+      "checkpoint": 100,
+      "mean": -3.726643095615216,
+      "lower": -3.949570503075002,
+      "upper": -3.424989416800816,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -3.8053693669698294,
+        "5": -3.949570503075002,
+        "4": -3.424989416800816
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "method": "ard",
+      "checkpoint": 50,
+      "mean": -4.319562397479153,
+      "lower": -4.649050062629026,
+      "upper": -3.987466479404999,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -3.9874664794049997,
+        "4": -4.649050062629026,
+        "5": -4.322170650403433
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "method": "ard",
+      "checkpoint": 100,
+      "mean": -3.836176076385007,
+      "lower": -4.205036759008131,
+      "upper": -3.2797779203887405,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -3.2797779203887405,
+        "4": -4.205036759008131,
+        "5": -4.023713549758149
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "method": "isotropic",
+      "checkpoint": 50,
+      "mean": -4.165953394304579,
+      "lower": -4.328016983877488,
+      "upper": -3.869245927237993,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -3.869245927237993,
+        "4": -4.300597271798258,
+        "5": -4.328016983877488
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "rotated",
+      "method": "isotropic",
+      "checkpoint": 100,
+      "mean": -3.6909275568145206,
+      "lower": -3.829838820938263,
+      "upper": -3.423488964542171,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -3.423488964542171,
+        "4": -3.8194548849631285,
+        "5": -3.829838820938263
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "method": "ard",
+      "checkpoint": 50,
+      "mean": -2.259573342645687,
+      "lower": -2.472947003195745,
+      "upper": -2.022953515780073,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -2.022953515780073,
+        "4": -2.2828195089612415,
+        "5": -2.472947003195745
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "method": "ard",
+      "checkpoint": 100,
+      "mean": -3.452130992272267,
+      "lower": -3.6317015444525977,
+      "upper": -3.114958409828853,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -3.114958409828853,
+        "4": -3.60973302253535,
+        "5": -3.6317015444525977
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "method": "isotropic",
+      "checkpoint": 50,
+      "mean": -0.32497927447543645,
+      "lower": -0.5204728332912895,
+      "upper": -0.1801165941260784,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -0.1801165941260784,
+        "4": -0.5204728332912895,
+        "5": -0.27434839600894145
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "method": "isotropic",
+      "checkpoint": 100,
+      "mean": -0.6068229595318596,
+      "lower": -0.7421339486677286,
+      "upper": -0.3785448591193894,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -0.3785448591193894,
+        "4": -0.699790070808461,
+        "5": -0.7421339486677285
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "method": "ard",
+      "checkpoint": 50,
+      "mean": -0.5912367993159483,
+      "lower": -0.8920165744442032,
+      "upper": -0.035635023337246,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "5": -0.8460588001663958,
+        "3": -0.035635023337246,
+        "4": -0.8920165744442032
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "method": "ard",
+      "checkpoint": 100,
+      "mean": -1.0599213418525772,
+      "lower": -1.5572849795453942,
+      "upper": -0.5083556173566057,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "5": -1.1141234286557316,
+        "3": -0.5083556173566057,
+        "4": -1.5572849795453942
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "method": "isotropic",
+      "checkpoint": 50,
+      "mean": -0.22254516601157462,
+      "lower": -0.6724918961058264,
+      "upper": 0.32399930966072077,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "5": -0.6724918961058264,
+        "3": 0.32399930966072077,
+        "4": -0.31914291158961827
+      }
+    },
+    {
+      "kind": "method",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "rotated",
+      "method": "isotropic",
+      "checkpoint": 100,
+      "mean": -0.9382520938538667,
+      "lower": -1.1883314823899296,
+      "upper": -0.48205922546313795,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "5": -1.144365573708532,
+        "3": -0.48205922546313795,
+        "4": -1.1883314823899296
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 50,
+      "mean": -0.1509007758149513,
+      "lower": -0.6680571105690043,
+      "upper": 0.14275963738312702,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": 0.07259514574102344,
+        "4": -0.6680571105690043,
+        "5": 0.14275963738312702
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 100,
+      "mean": -0.21942757811096106,
+      "lower": -0.7090017815797447,
+      "upper": 0.05160686245594359,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": 0.05160686245594359,
+        "4": -0.7090017815797447,
+        "5": -0.000887815209082099
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 50,
+      "mean": 0.04516615035238395,
+      "lower": -0.0346748604346202,
+      "upper": 0.1069677386407536,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -0.0346748604346202,
+        "5": 0.06320557285101847,
+        "4": 0.1069677386407536
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 100,
+      "mean": -0.07033425522191594,
+      "lower": -0.391238554330607,
+      "upper": 0.21738350333914958,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -0.39123855433060706,
+        "5": -0.037147714674290344,
+        "4": 0.21738350333914958
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 50,
+      "mean": 0.0005206062716801204,
+      "lower": -0.1882971388653294,
+      "upper": 0.20962743423439045,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -0.019768476554020697,
+        "4": -0.1882971388653294,
+        "5": 0.20962743423439045
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 1,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 100,
+      "mean": -0.034618716421220906,
+      "lower": -0.17708196482316252,
+      "upper": 0.08258396746244845,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -0.009358151902948642,
+        "4": -0.17708196482316252,
+        "5": 0.08258396746244845
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 50,
+      "mean": 1.7185402448359917,
+      "lower": 1.2794511465484844,
+      "upper": 2.0255128613373907,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "5": 2.0255128613373907,
+        "3": 1.8506567266221006,
+        "4": 1.2794511465484844
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "ard",
+      "checkpoint": 100,
+      "mean": 2.6448687673907725,
+      "lower": 2.495946960887974,
+      "upper": 2.8610009636130473,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "5": 2.8610009636130473,
+        "3": 2.5776583776712965,
+        "4": 2.495946960887974
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 50,
+      "mean": 0.050203701506253674,
+      "lower": -0.1366617658207262,
+      "upper": 0.3986246583080413,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -0.1366617658207262,
+        "4": -0.11135178796855405,
+        "5": 0.3986246583080413
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "cmaes",
+      "checkpoint": 100,
+      "mean": 0.2526591169710829,
+      "lower": -0.02894441480095078,
+      "upper": 0.44349891789801826,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "3": -0.02894441480095078,
+        "4": 0.4434989178980183,
+        "5": 0.34342284781618115
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 50,
+      "mean": 0.15263780997011547,
+      "lower": 0.0004811582111563517,
+      "upper": 0.36745413796607296,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "5": 0.0004811582111563517,
+        "3": 0.36745413796607296,
+        "4": 0.08997813373311714
+      }
+    },
+    {
+      "kind": "rotation",
+      "dimension": 5,
+      "beta": 0,
+      "conditioning": 10000,
+      "orientation": "paired",
+      "method": "isotropic",
+      "checkpoint": 100,
+      "mean": -0.07877001735092404,
+      "lower": -0.13245878114469933,
+      "upper": -0.04504249368345037,
+      "instances": 3,
+      "pairs": 6,
+      "instance_means": {
+        "5": -0.05880877722462241,
+        "3": -0.13245878114469933,
+        "4": -0.04504249368345037
+      }
+    }
+  ]
+}

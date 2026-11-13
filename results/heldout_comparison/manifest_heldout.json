@@ -1,0 +1,973 @@
+{
+  "study": "heldout",
+  "fingerprint": {
+    "code_sha256": "52b8a6a393f91a53e80ba5afda05959844e63542b690e59b68ff83be0421305e",
+    "versions": {
+      "python": "3.14.7",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "sklearn": "1.9.1",
+      "cma": "4.5.0",
+      "threadpoolctl": "3.8.0"
+    },
+    "budget": 100,
+    "bo_variant": "logei_local",
+    "master_seed": 20261102,
+    "threads": 1,
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "numpy_blas": {
+      "name": "accelerate",
+      "found": true,
+      "version": "unknown",
+      "detection method": "system",
+      "include directory": "unknown",
+      "lib directory": "unknown",
+      "openblas configuration": "unknown",
+      "pc file directory": "unknown"
+    }
+  },
+  "jobs": [
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 0,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k1_aligned_beta0_i3_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 0,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k1_rotated_beta0_i3_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 1,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k10000_rotated_beta0_i5_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 1,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k1_aligned_beta0_i3_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 0,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k10000_aligned_beta0_i3_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 1,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k1_rotated_beta0_i4_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 0,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k10000_aligned_beta0_i4_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 1,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k10000_aligned_beta0_i4_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 1,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k1_aligned_beta0_i5_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 0,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k10000_rotated_beta0_i5_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 1,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k1_rotated_beta0_i5_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 1,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k10000_aligned_beta0_i5_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 1,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k10000_rotated_beta0_i3_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 0,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k1_aligned_beta0_i5_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 0,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k1_rotated_beta0_i3_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 0,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k1_rotated_beta0_i4_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 1,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k1_aligned_beta0_i5_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 0,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k1_rotated_beta0_i3_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 0,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k10000_rotated_beta0_i3_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 0,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k1_rotated_beta0_i5_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 0,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k10000_rotated_beta0_i5_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 0,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k10000_rotated_beta0_i3_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 1,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k10000_aligned_beta0_i4_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 0,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k10000_rotated_beta0_i3_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 0,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k10000_aligned_beta0_i3_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 1,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k10000_aligned_beta0_i3_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 1,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k10000_rotated_beta0_i5_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 0,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k10000_rotated_beta0_i4_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 1,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k1_aligned_beta0_i3_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 0,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k1_aligned_beta0_i5_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 0,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k10000_rotated_beta0_i4_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 0,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k1_aligned_beta0_i5_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 1,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k10000_aligned_beta0_i3_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 0,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k10000_rotated_beta0_i4_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 0,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k1_rotated_beta0_i4_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 1,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k1_rotated_beta0_i3_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 1,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k10000_rotated_beta0_i4_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 1,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k10000_rotated_beta0_i3_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 0,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k10000_aligned_beta0_i4_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 1,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k10000_aligned_beta0_i5_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 0,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k10000_aligned_beta0_i4_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 1,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k1_rotated_beta0_i4_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 1,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k10000_aligned_beta0_i3_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 0,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k10000_aligned_beta0_i5_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 0,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k1_rotated_beta0_i4_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 1,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k1_rotated_beta0_i3_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 1,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k1_aligned_beta0_i4_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 0,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k1_rotated_beta0_i5_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 1,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k1_rotated_beta0_i3_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 0,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k10000_rotated_beta0_i5_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 1,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k1_aligned_beta0_i3_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 0,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k10000_aligned_beta0_i5_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 1,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k1_rotated_beta0_i4_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 1,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k1_rotated_beta0_i5_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 0,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k1_aligned_beta0_i4_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 1,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k10000_rotated_beta0_i5_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 1,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k10000_aligned_beta0_i4_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 1,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k10000_rotated_beta0_i4_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 0,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k1_aligned_beta0_i3_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 1,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k1_aligned_beta0_i5_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 1,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k1_aligned_beta0_i4_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 1,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k1_rotated_beta0_i5_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 1,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k10000_aligned_beta0_i5_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 0,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k1_aligned_beta0_i3_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 0,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k1_rotated_beta0_i5_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 0,
+      "method": "isotropic",
+      "variant": "logei_local",
+      "file": "isotropic_logei_local_d5_k1_aligned_beta0_i4_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 1,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k1_aligned_beta0_i4_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 5
+      },
+      "run": 0,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k10000_aligned_beta0_i5_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 1,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k10000_rotated_beta0_i3_r1_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 1,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 0,
+      "method": "ard",
+      "variant": "logei_local",
+      "file": "ard_logei_local_d5_k1_aligned_beta0_i4_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "aligned",
+        "beta": 0,
+        "instance": 3
+      },
+      "run": 0,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k10000_aligned_beta0_i3_r0_b100.json"
+    },
+    {
+      "problem": {
+        "dimension": 5,
+        "conditioning": 10000,
+        "orientation": "rotated",
+        "beta": 0,
+        "instance": 4
+      },
+      "run": 1,
+      "method": "cmaes",
+      "variant": null,
+      "file": "cmaes_d5_k10000_rotated_beta0_i4_r1_b100.json"
+    }
+  ]
+}

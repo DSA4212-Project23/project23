@@ -1,0 +1,13 @@
+{
+  "study": "timing",
+  "budget": 500,
+  "bo_variant": "logei_local",
+  "expected": 3,
+  "completed": 3,
+  "missing": [],
+  "failures": [],
+  "bootstrap_seed": null,
+  "bootstrap_resamples": 0,
+  "floor": 1e-12,
+  "contrasts": []
+}

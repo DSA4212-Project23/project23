@@ -1,0 +1,336 @@
+{
+  "fingerprint": {
+    "code": "72b28c22e5a1af093db5aee5431deb7bfceef2552f73c8cdbf837bebb4c3a208",
+    "baseline_checks": "c7e510c880b1e4fa6e5e67107896ecef658176a790ffafde168012b3d26d4865",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "python": "3.14.7",
+    "budget": 100,
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    }
+  },
+  "records": [
+    {
+      "kernel": "isotropic",
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "evaluation": 50,
+      "variant": "baseline",
+      "kernel_theta": [
+        6.907755278982137,
+        2.0841700673556995
+      ],
+      "candidate": [
+        -0.14940642875867985,
+        0.6306319831588941,
+        -0.1817515704332689,
+        0.08104054581644833,
+        0.18808396154715898
+      ],
+      "mean": -0.003073485637561435,
+      "std": 0.030627526191513925,
+      "observed_best": 0.0035019616176113558,
+      "offline_loss": 0.002444280412212983,
+      "fit_warnings": [
+        "lbfgs failed to converge after 2 iteration(s) (status=2):\nABNORMAL: \n\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html",
+        "The optimal value found for dimension 0 of parameter k1__constant_value is close to the specified upper bound 1000.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 512,
+      "finite_log_ei": 512,
+      "std_min": 0.023437260853545815,
+      "std_max": 0.4165899356546767,
+      "z_min": -36.0990164957483,
+      "z_max": 0.0018973160211158211,
+      "best_pool_log_ei": -4.360149153083236,
+      "best_pool_ei": 0.0127764818557501,
+      "selected_log_ei": -4.148577765841026,
+      "selected_ei": 0.01578685312777356
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "evaluation": 50,
+      "variant": "logei",
+      "kernel_theta": [
+        6.907755278982137,
+        2.0841700673556995
+      ],
+      "candidate": [
+        0.2329729973998313,
+        -0.430371820413146,
+        0.8518532335548229,
+        0.07461772207880517,
+        0.1711196736524178
+      ],
+      "mean": 0.07666392315783271,
+      "std": 0.10583581710937018,
+      "observed_best": 0.0035019616176113558,
+      "offline_loss": 0.047066596791080974,
+      "fit_warnings": [
+        "lbfgs failed to converge after 2 iteration(s) (status=2):\nABNORMAL: \n\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html",
+        "The optimal value found for dimension 0 of parameter k1__constant_value is close to the specified upper bound 1000.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 512,
+      "finite_log_ei": 512,
+      "std_min": 0.023437260853545815,
+      "std_max": 0.4165899356546767,
+      "z_min": -36.0990164957483,
+      "z_max": 0.0018973160211158211,
+      "best_pool_log_ei": -4.360149153083236,
+      "best_pool_ei": 0.0127764818557501,
+      "selected_log_ei": -4.176876030346033,
+      "selected_ei": 0.015346374368404473
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "evaluation": 50,
+      "variant": "local",
+      "kernel_theta": [
+        6.907755278982137,
+        2.0841700673556995
+      ],
+      "candidate": [
+        0.38519173109206767,
+        0.6210296851225643,
+        -0.6324296276010203,
+        -0.10821315603865146,
+        0.23296381576007644
+      ],
+      "mean": 0.07205071739758087,
+      "std": 0.09645548362657555,
+      "observed_best": 0.0035019616176113558,
+      "offline_loss": 0.05166929054123208,
+      "fit_warnings": [
+        "lbfgs failed to converge after 2 iteration(s) (status=2):\nABNORMAL: \n\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html",
+        "The optimal value found for dimension 0 of parameter k1__constant_value is close to the specified upper bound 1000.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 512,
+      "finite_log_ei": 512,
+      "std_min": 0.0005540725080416572,
+      "std_max": 0.40242308310404057,
+      "z_min": -36.0990164957483,
+      "z_max": 1.0718447844598753,
+      "best_pool_log_ei": -4.360149153083236,
+      "best_pool_ei": 0.0127764818557501,
+      "selected_log_ei": -4.302549538418138,
+      "selected_ei": 0.013534009511075508
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "evaluation": 50,
+      "variant": "logei_local",
+      "kernel_theta": [
+        6.907755278982137,
+        2.0841700673556995
+      ],
+      "candidate": [
+        0.23363183024753534,
+        -0.4307710922413553,
+        0.8514658696074962,
+        0.07458927376348283,
+        0.1711570831644621
+      ],
+      "mean": 0.07669317800117009,
+      "std": 0.10585855789655825,
+      "observed_best": 0.0035019616176113558,
+      "offline_loss": 0.04702675259346126,
+      "fit_warnings": [
+        "lbfgs failed to converge after 2 iteration(s) (status=2):\nABNORMAL: \n\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html",
+        "The optimal value found for dimension 0 of parameter k1__constant_value is close to the specified upper bound 1000.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 512,
+      "finite_log_ei": 512,
+      "std_min": 0.0005540725080416572,
+      "std_max": 0.40242308310404057,
+      "z_min": -36.0990164957483,
+      "z_max": 1.0718447844598753,
+      "best_pool_log_ei": -4.360149153083236,
+      "best_pool_ei": 0.0127764818557501,
+      "selected_log_ei": -4.176876951660652,
+      "selected_ei": 0.01534636022957193
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "evaluation": 100,
+      "variant": "baseline",
+      "kernel_theta": [
+        6.907755278982137,
+        2.1137366379720333
+      ],
+      "candidate": [
+        -0.8085216103928738,
+        -0.49712250900422345,
+        -0.21087750967656338,
+        0.14160556457178664,
+        0.18611972806970095
+      ],
+      "mean": 0.0027173506880868725,
+      "std": 0.009605417173180697,
+      "observed_best": 0.0005785455947134912,
+      "offline_loss": 0.0037914563746990126,
+      "fit_warnings": [
+        "The optimal value found for dimension 0 of parameter k1__constant_value is close to the specified upper bound 1000.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 2,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 508,
+      "finite_log_ei": 512,
+      "std_min": 0.008503051693435494,
+      "std_max": 0.2507981840440988,
+      "z_min": -54.254234310135146,
+      "z_max": -0.7215923209107205,
+      "best_pool_log_ei": -6.749810209449491,
+      "best_pool_ei": 0.0011711018637681249,
+      "selected_log_ei": -5.857909608717476,
+      "selected_ei": 0.0028572101315519623
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "evaluation": 100,
+      "variant": "logei",
+      "kernel_theta": [
+        6.907755278982137,
+        2.1137366379720333
+      ],
+      "candidate": [
+        -0.8086211113249008,
+        -0.4971358239004814,
+        -0.21075482238598686,
+        0.1412922713900695,
+        0.18602894882568854
+      ],
+      "mean": 0.0027085886511088175,
+      "std": 0.009596101828604776,
+      "observed_best": 0.0005785455947134912,
+      "offline_loss": 0.0037812334159985288,
+      "fit_warnings": [
+        "The optimal value found for dimension 0 of parameter k1__constant_value is close to the specified upper bound 1000.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 508,
+      "finite_log_ei": 512,
+      "std_min": 0.008503051693435494,
+      "std_max": 0.2507981840440988,
+      "z_min": -54.254234310135146,
+      "z_max": -0.7215923209107205,
+      "best_pool_log_ei": -6.749810209449491,
+      "best_pool_ei": 0.0011711018637681249,
+      "selected_log_ei": -5.857914971316424,
+      "selected_ei": 0.002857194809521003
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "evaluation": 100,
+      "variant": "local",
+      "kernel_theta": [
+        6.907755278982137,
+        2.1137366379720333
+      ],
+      "candidate": [
+        0.7671749596172631,
+        -0.44109487923757545,
+        -0.4004551452003634,
+        0.12084332547906253,
+        0.20472043425949787
+      ],
+      "mean": 0.016198005166115303,
+      "std": 0.019452523873722927,
+      "observed_best": 0.0005785455947134912,
+      "offline_loss": 0.008846805590468031,
+      "fit_warnings": [
+        "The optimal value found for dimension 0 of parameter k1__constant_value is close to the specified upper bound 1000.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 511,
+      "finite_log_ei": 512,
+      "std_min": 0.00020086902029989385,
+      "std_max": 0.2507981840440988,
+      "z_min": -40.507020790648404,
+      "z_max": 0.25527838136532827,
+      "best_pool_log_ei": -6.57703727186219,
+      "best_pool_ei": 0.0013919672121153023,
+      "selected_log_ei": -6.0635237323542075,
+      "selected_ei": 0.0023261895593519
+    },
+    {
+      "kernel": "isotropic",
+      "conditioning": 10000,
+      "orientation": "aligned",
+      "evaluation": 100,
+      "variant": "logei_local",
+      "kernel_theta": [
+        6.907755278982137,
+        2.1137366379720333
+      ],
+      "candidate": [
+        0.9682203567946138,
+        0.1292906026940558,
+        -0.026901134562162574,
+        0.10917938163321404,
+        0.18217978024187007
+      ],
+      "mean": 3.3348047583509066e-05,
+      "std": 0.005400718759433616,
+      "observed_best": 0.0005785455947134912,
+      "offline_loss": 0.0007837371053632458,
+      "fit_warnings": [
+        "The optimal value found for dimension 0 of parameter k1__constant_value is close to the specified upper bound 1000.0. Increasing the bound and calling fit again may find a better value."
+      ],
+      "slsqp_failures": 0,
+      "random_fallback": false,
+      "extra_pools": 0,
+      "positive_std": 512,
+      "positive_ei": 511,
+      "finite_log_ei": 512,
+      "std_min": 0.00020086902029989385,
+      "std_max": 0.2507981840440988,
+      "z_min": -40.507020790648404,
+      "z_max": 0.25527838136532827,
+      "best_pool_log_ei": -6.57703727186219,
+      "best_pool_ei": 0.0013919672121153023,
+      "selected_log_ei": -6.016518659934236,
+      "selected_ei": 0.00243814284170111
+    }
+  ]
+}

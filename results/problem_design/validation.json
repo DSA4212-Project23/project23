@@ -1,0 +1,10 @@
+{
+  "settings_checked": 180,
+  "max_rotation_error": 1.9539925233402755e-14,
+  "max_condition_relative_error": 1.1552980794249379e-12,
+  "max_optimum_loss": 5.585621385125077e-32,
+  "max_unit_mean_error": 0.014156992784508216,
+  "max_mean_error_in_standard_errors": 1.925708928489071,
+  "status": "passed",
+  "monte_carlo_points_per_dimension": 20000
+}
